@@ -3,6 +3,7 @@ import org.junit.Before;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 
+
 /**
  * Created by user on 2/21/2017.
  */
@@ -12,12 +13,13 @@ public class BaseTest {
     public String baseURL;
 
 
+
     @Before
     public void setUp(){
-        // I defined this folder in PATH, but for some reason it still did not see chromedriver
-        System.setProperty("webdriver.chrome.driver", "D:\\QA\\Drivers\\chromedriver.exe");
+
+        //System.setProperty("webdriver.chrome.driver", "D:\\QA\\Drivers\\chromedriver.exe");
         driver = new ChromeDriver();
-        baseURL = "https://www.facebook.com/";
+        baseURL = "http://localhost/litecart/admin/";
         driver.get(baseURL);
     }
 
