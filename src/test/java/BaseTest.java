@@ -17,7 +17,7 @@ public class BaseTest {
     @Before
     public void setUp(){
 
-        //System.setProperty("webdriver.chrome.driver", "D:\\QA\\Drivers\\chromedriver.exe");
+        
         driver = new ChromeDriver();
         baseURL = "http://localhost/litecart/admin/";
         driver.get(baseURL);
